@@ -24,7 +24,7 @@ describe('filter', () => {
   })
 
   it('should return plurals with over 5 letters', () => {
-    const result = bigPlural(['snakes', 'bats', 'elephant'])
+    const result = longPlural(['snakes', 'bats', 'elephant'])
 
     assert.deepEqual(result, ['snakes'])
   })
