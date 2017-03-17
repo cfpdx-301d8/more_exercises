@@ -2,7 +2,10 @@
 //
 // [2, 4, 54, 3, 12, 9] -> [54, 12]
 function bigNumbers(arr) {
-  // your code here
+  const newArr = arr.filter(function(num) {
+    return num > 10;
+  });
+  return newArr;
 }
 
 // Return an array of numbers greater than 10
@@ -10,7 +13,9 @@ function bigNumbers(arr) {
 //
 // [9, 10, 44, 12, 34, 19] ->  [34, 19]
 function middleNumbers(arr) {
-  // your code here
+  return arr.filter(function(num) {
+    return num > 10 && num < 30;
+  });
 }
 
 // Return an array of strings that contain the
@@ -18,7 +23,9 @@ function middleNumbers(arr) {
 //
 // ['sloth', 'gecko', 'hyrax', 'snake'] -> ['gecko', 'snake']
 function hasAnE(arr) {
-  // your code here
+  return arr.filter(function(animal) {
+    return animal.indexOf('e') >= 0;
+  });
 }
 
 // **STRETCH**
@@ -29,7 +36,9 @@ function hasAnE(arr) {
 // ['sloth', 'geckos', 'hyrax', 'snakes', 'bats'] -> ['geckos', 'snakes']
 
 function longPlural(arr) {
-  // your code here
+  return arr.filter(function(animal) {
+    return animal.length > 5 && animal[animal.length - 1] === 's';
+  });
 }
 
 module.exports = {
