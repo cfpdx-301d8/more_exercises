@@ -1,8 +1,10 @@
 const assert = require('assert')
-const { shouty,
-        capitalize,
-        plural,
-        everyOther } = require('../exercises/map')
+const mapEx = require('../exercises/map')
+
+const shouty = mapEx.shouty
+const capitalize = mapEx.capitalize
+const plural = mapEx.plural
+const everyOther = mapEx.everyOther
 
 describe('map', () => {
   it('should capitalize every word', () => {
